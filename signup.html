@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog Signup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+    }
+    
+    .container {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Create an Account</h1>
+    <form action="/signup" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <input type="submit" value="Sign Up">
+    </form>
+  </div>
+</body>
+</html>
